@@ -10,19 +10,18 @@ body {
 }
 
 .container {
-    width: 99%;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
-    justify-content: center;
 }
 
 .hero {
     width: 100%;
     height: 100%;
     min-height: 600px;
-    max-height: 900px;
+    
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
@@ -95,31 +94,16 @@ body {
 /* Hero container */
 
 .hero__container {
-     
+    max-width: 1000px;
+    max-height: 900px;
     --padding-container: 100p;
-    display: flex;
+    display: grid;
     
     grid-auto-rows: max-content;
     align-content: center;
     gap: 1em;
     padding-bottom: 10px;
     text-align: center;
-    background-image: url('images/mecanicaitems.png');
-}
-
-.hero__img{
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 300px;
-    position: absolute;
-    transform: translate(0, -50%);
-    border-radius: 20px;
-    box-shadow: 0 30px 50px #505050;
-    background-position: 50% 50%;
-    background-size: cover;
-    display: flex;
-    transition: 0.5s;
 }
 
 .hero__title {
@@ -154,6 +138,41 @@ body {
     border-radius: 32px;
 }
 
+
+.about {
+    text-align: center;
+}
+
+.about__paragraph{
+    color: white;
+}
+
+.about__main {
+    padding-top: 80px;
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.about__icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+
+
+.about__icon {
+    width: 40px;
+    animation: rotate 3s infinite;
+}
 
 /* Footer */
 
