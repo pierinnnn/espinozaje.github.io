@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Montserrat+Alternates:ital,wght@1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
  
 :root {
@@ -154,8 +153,11 @@ body {
 }
 
 
+
+
 .about__paragraph {
     line-height: 1.7;
+    font-size: large;
 }
 
 .about__main {
@@ -214,17 +216,21 @@ body {
 }
 
 .knowledge__picture{
-    max-width: 500px;
+    height: 100%;
+    width: 100%;
+   
 }
 
 .knowledge__paragraph{
     line-height: 1.7;
     margin-bottom: 15px;
+    font-size: large;
 }
 
 .knowledge__img{
-    width: 100%;
-    display: block;
+    height: 300px;
+    width: 1000px;
+    display: inline-block;
     align-items: center;
 }
 
@@ -233,6 +239,14 @@ body {
 
 
 .service .subtitle{
+    text-align: center;
+}
+
+
+.sersubtitle{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 25px;
     text-align: center;
 }
 
