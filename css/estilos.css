@@ -116,14 +116,19 @@ body {
 .hero__title {
     font-size: 3rem;
     color: white;
-   font-family: "Racing Sans One",  sans-serif;
+   
+}
+
+@font-face {
+    font-family: 'font-id';
+    src: url('/fontid/FontsFree-Net-verbatim-black-oblique.ttf');
 }
 
 .hero__paragraph {
     margin-bottom: 10px;
     font-size: 30px;
     color: rgb(255, 0, 0);
-    font-family: "Racing Sans One",  sans-serif;
+    font-family: 'font-id';
 }
 
 .cta {
