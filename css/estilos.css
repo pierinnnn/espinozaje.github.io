@@ -79,6 +79,7 @@ body {
 .nav__links {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .nav__menu {
@@ -609,7 +610,7 @@ body {
 }
 
 .footerinfo{
-    font-size: 15px;
+    font-size: 20px;
     color: white;
 }
 
