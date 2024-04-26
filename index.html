@@ -50,9 +50,16 @@
     <i class="fa fa-whatsapp my-float"></i>
     </a>
 
-    <img style="display: scroll; position: fixed; bottom: 110px; right: 31px; width: 80px; z-index: 100;" src="images/25a.png">
+    <img style="display: scroll; position: fixed; bottom: 110px; right: 31px; width: 80px; z-index: 100000;" src="images/25a.png">
     <header class="hero">
-        <nav class="nav container">
+
+        <img class="fondo active" src="images/taller.jpg" alt="" >
+        <img class="fondo" src="images/mecanica.jpg" alt="" >
+        <img class="fondo" src="images/pinturaa.jpg" alt="" >
+        <img class="fondo" src="images/repuestos.jpg" alt="" >
+       
+          
+        <nav class="nav container" >
             <div class="nav__logo" id="Inicio">
 <img src="images/logo.png" width=300px>
             </div>
@@ -89,8 +96,45 @@
 
 
             <a href="https://api.whatsapp.com/send?phone=51983527464&text=Hola,%20me%20gustaria%20Obtener%20m%C3%A1s%20informaci%C3%B3n" class="cta">Cotizar ahora!</a>
+           
+            <div class="fondonavegacion">
+                <label for="boton1" class="btn_fondo active" ></label>
+                <label for="boton2" class="btn_fondo" ></label>
+                <label for="boton3" class="btn_fondo" ></label>
+                <label for="boton4" class="btn_fondo" ></label>
+            </div>
+
+
+            
         </section>
-        
+
+
+        <script type="text/javascript">
+
+            onload= ()=>{
+                var counter=1;
+
+setInterval(function(){
+document.getElementById('boton'+counter).checked=true;
+
+counter++;
+if(counter>4){
+    counter=1;
+}
+
+}, 1000);
+
+
+
+            };
+
+
+
+        </script>
+      
+            
+
+       
        
     </header>
 
@@ -804,9 +848,11 @@ un rendimiento excepcional en cada vehículo.
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/fondo.js"></script>
     <script>
         AOS.init();
       </script>
+      
       
 </body>
 

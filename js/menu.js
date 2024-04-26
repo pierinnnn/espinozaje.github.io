@@ -12,7 +12,12 @@
         menu.classList.remove('nav__link--show');
     });
 
-    
+    menu.addEventListener('click', ()=>{
+        menu.classList.remove('nav__link--show');
+    });
+
+
+  
 
 
 })();
