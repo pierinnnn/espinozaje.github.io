@@ -32,7 +32,7 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-    color: red;
+    color: rgb(0, 0, 0);
     z-index: 778;
     background: #000000;
 }
@@ -83,14 +83,18 @@ body {
 .fondo{
     position: absolute;
     width: 100%;
-    clip-path: circle(0% at 0 50%);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
 }
 
 .fondo.active{
-    clip-path: circle(150% at 0 50%);
-    transition: 2s ease;
-    transition-property: clip-path;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    transition: 1s;
+    
 }
+
+
+
 
 .hero::before {
     content: "";
@@ -177,7 +181,7 @@ body {
 .hero__title {
     font-size: 3rem;
     color: white;
-   
+   height: 200px;
 }
 
 @font-face {
@@ -187,6 +191,7 @@ body {
 
 .hero__paragraph {
     margin-bottom: 10px;
+    height: 200px;
     font-size: 30px;
     color: rgb(255, 0, 0);
     font-family: 'font-id';

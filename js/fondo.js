@@ -14,6 +14,15 @@ window.onload = function() {
        
         slides[manual].classList.add("active");
         currentIndex = manual; 
+
+
+        btns.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+       
+        btns[manual].classList.add("active");
+        currentIndex = manual; 
     }
 
     
