@@ -181,7 +181,7 @@ body {
 .hero__title {
     font-size: 3rem;
     color: white;
-   height: 200px;
+   height: 150px;
 }
 
 @font-face {
@@ -191,7 +191,7 @@ body {
 
 .hero__paragraph {
     margin-bottom: 10px;
-    height: 200px;
+    height: 150px;
     font-size: 30px;
     color: rgb(255, 0, 0);
     font-family: 'font-id';
@@ -633,8 +633,8 @@ body {
         transform: translateX(0);
     }
     100%{
-        -webkit-transform: translateX(calc(-200px * 25));
-        transform: translateX(calc(-200px * 25));
+        -webkit-transform: translateX(calc(-200px * 23));
+        transform: translateX(calc(-200px * 23));
     }
 }
 
