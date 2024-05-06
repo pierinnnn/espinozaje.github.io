@@ -230,6 +230,22 @@ body {
     
 }
 
+.flotasubtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+.flotapara {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+    
+}
 
 
 
@@ -323,8 +339,9 @@ body {
 .sersubtitle{
     color: black;
     font-size: 2rem;
-    margin-bottom: 25px;
+   padding-top: 100px;
     text-align: center;
+    
 }
 
 .service__table{
@@ -609,8 +626,8 @@ body {
 
 .questions__offer .barra{
     display: flex;
-    animation: scroll 20s linear infinite;
-    -webkit-animation:scroll 20s linear infinite;
+    animation: scroll 10s linear infinite;
+    -webkit-animation:scroll 10s linear infinite;
     width: calc(200px * 14);
 }   
 
@@ -633,8 +650,49 @@ body {
         transform: translateX(0);
     }
     100%{
-        -webkit-transform: translateX(calc(-200px * 23));
-        transform: translateX(calc(-200px * 23));
+        -webkit-transform: translateX(calc(-200px * 14));
+        transform: translateX(calc(-200px * 14));
+    }
+}
+
+.questions__offerautos{
+    width: 55%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 100px;
+
+}
+
+.questions__offerautos .barraautos{
+    
+    display: flex;
+    animation: scroll 10s linear infinite;
+    -webkit-animation:scroll 10s linear infinite;
+    width: calc(200px * 6);
+}   
+
+.questions__offerautos .marcaautos{
+    width: 100%;
+}
+.subtitlemarcasautos{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.questions__offerautos .barraautos img{
+    width: 200px;
+}
+
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200px * 6));
+        transform: translateX(calc(-200px * 6));
     }
 }
 
