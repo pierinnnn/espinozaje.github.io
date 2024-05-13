@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="css/wsp.css">
     <link rel="stylesheet" href="css/icons.css">
-    
+    <link rel="stylesheet" href="css/my-slider.css"/>
     
     <meta name="theme-color" content="#080808">
 
@@ -56,14 +56,33 @@
     <img style="display: scroll; position: fixed; bottom: 110px; right: 31px; width: 80px; z-index: 100000;" src="images/25a.png">
     <header class="hero">
 
-        <img class="fondo active" src="images/1.png" alt="" >
-        <img class="fondo" src="images/2.png" alt="" >
-        <img class="fondo" src="images/3.png" alt="" >
-        <img class="fondo" src="images/4.png" alt="" >
-        <img class="fondo" src="images/5.png" alt="" >
-        <img class="fondo" src="images/6.png" alt="" >
-      
        
+      
+        <div class="ism-slider" data-play_type="loop" data-buttons="false" id="my-slider">
+
+
+            
+            <ol>
+              <li>
+                <img src="images/1.png">
+              </li>
+              <li>
+                <img src="images/2.png">
+              </li>
+              <li>
+                <img src="images/3.png">
+              </li>
+              <li>
+                <img src="images/4.png">
+              </li>
+              <li>
+                <img src="images/5.png">
+              </li>
+              <li>
+                <img src="images/6.png">
+              </li>
+            </ol>
+          </div>
        
 
        
@@ -108,102 +127,14 @@
             <p class="hero__paragraph"></p>
             <a href="https://api.whatsapp.com/send?phone=51983527464&text=Hola,%20me%20gustaria%20Obtener%20m%C3%A1s%20informaci%C3%B3n" class="cta">Cotizar ahora!</a>
             
-            <div class="fondonavegacion">
-                <div class="btn_fondo active"></div>
-                <div class="btn_fondo"></div>
-                <div class="btn_fondo"></div>
-                <div class="btn_fondo"></div>
-                <div class="btn_fondo"></div>
-                <div class="btn_fondo"></div>
-           </div>
-            
-
+        
             
 
             
             
         </section>
-         <!--
-        <div class="slider">
-
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <input type="radio" name="radio-btn" id="radio5">
-                <input type="radio" name="radio-btn" id="radio6">
-         
-         
-                         <div class="slideinicio first">
-                         <img src="images/1.png" alt="" >
-                        </div>
-                        <div class="slideinicio">
-                         <img src="images/2.png" alt="" >
-                        </div>
-                        <div class="slideinicio">
-                         <img src="images/3.png" alt="" >
-                        </div>
-                        <div class="slideinicio">
-                         <img src="images/4.png" alt="" >
-                        </div>
-                        <div class="slideinicio">
-                         <img src="images/5.png" alt="" >
-                        </div>
-                        <div class="slideinicio">
-                         <img src="images/6.png" alt="" >
-                        </div>
-         
-                     
-                     <div class="navigation-auto">
-                         <div class="auto-btn1"></div>
-                         <div class="auto-btn2"></div>
-                         <div class="auto-btn3"></div>
-                         <div class="auto-btn4"></div>
-                         <div class="auto-btn5"></div>
-                         <div class="auto-btn6"></div>
-                     </div>
-         
-            </div>
-                     <div class="navigation-manual">
-                         <label for="radio1" class="manual-btn"></label>
-                         <label for="radio2" class="manual-btn"></label>
-                         <label for="radio3" class="manual-btn"></label>
-                         <label for="radio4" class="manual-btn"></label>
-                         <label for="radio5" class="manual-btn"></label>
-                         <label for="radio6" class="manual-btn"></label>
-                     </div>
+        
     
-         
-            
-        </div>
--->
-        <script type="text/javascript">
-
-            onload= ()=>{
-                var counter=1;
-
-setInterval(function(){
-document.getElementById('boton'+counter).checked=true;
-
-counter++;
-if(counter>6){
-    counter=1;
-}
-
-}, 3000);
-
-
-
-            };
-
-
-
-        </script>
-      
-            
-
-       
        
     </header>
 
@@ -724,6 +655,7 @@ un rendimiento excepcional en cada vehículo.
     <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/fondo.js"></script>
+    <script src="js/ism-2.2.min.js"></script>
     <script>
         AOS.init();
       </script>
