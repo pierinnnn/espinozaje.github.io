@@ -72,19 +72,7 @@
   pointer-events: none;
 }
 
-.ism-button, .ism-pause-button {
-  position: absolute;
-  display: block;
-  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-  border: none;
-  outline: none;
-  text-align:center;
-  z-index: 6;
-  cursor: pointer;
-  padding: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+
 
 .ism-pause-button {
   display: none;
